@@ -1,27 +1,45 @@
-import Link from "next/link";
+"use client"
 
-export default function Login() {
+import Header from "@/app/components/ui/Header"
+import {Camera, ImageIcon, User2, Verified } from "lucide-react"
+import Image from "next/image"
+import { useRef, useState } from "react"
+import { redirect } from "next/navigation"
+import { ChangeFile } from "@/app/components/form/ChangeFile"
+
+
+export default function Page() {
+
+  
+
     return (
-        <div
-            className=" relative text-white h-screen w-full flex justify-center items-center  bg-cover bg-no-repeat"
-            style={{ backgroundImage: "url(/img/food/pexels-chanwalrus-958545.jpg)" }}>
-            <div className=" h-full w-full  bg-gradient-to-b from-black/30 to-black/50  backdrop-blur-xs flex justify-center items-center  ">
-                <div className=" m-2 lg:bg-black/60 lg:m-0 lg:p-96 w-full p-2 text-center  flex flex-col gap-5 ">
-                    <h1 className="  font-extrabold text-4xl">Connexion</h1>
-                    <div className=" flex gap-2 rounded-full border border-red-600 w-full bg-black/80 backdrop-blur-lg">
-                        <Link href={"/auth/login"}  className="rounded-full p-2 w-full bg-red-600 text-white">Connexion</Link>
-                        <Link href={"/auth/register"} className="rounded-full p-2 w-full  text-white">Inscription</Link>
-                    </div>
-                    <div className=" flex flex-col gap-5">
-                        <input type="text" placeholder="votre email" className=" rounded-full w-full bg-black/90 p-3" />
-                        <input type="text" placeholder="votre mot de passe" className=" rounded-full w-full bg-black/90 p-3" />
-                    </div>
-                    <button className="rounded-full p-2 w-full bg-red-600 mt-5  text-white">valider</button>
-                    <p className=" mt-5 text-sm">
-                        Vous avez pas de compte?
-                    </p>
+        <>
+            {/* <Header returnbutton /> */}
+            <div className=" h-screen flex flex-col items-center justify-center bg-white w-full p-5 py-20 text-black">
+               
+                <div className=" text-center">
+                    <h1 className=" font-bold text-3xl">Connexion</h1>
+                    {/* <p className=" text-zinc-600 mt-2">
+                        veuillez remplire les informations suivantes pour composer votre plat
+                    </p> */}
                 </div>
+                <div className=" flex flex-col items-center mt-5">
+                    <div className=" relative border border-black rounded-full size-32 flex justify-center items-center">
+                        <User2 size={50} amplitude={2} />
+                        <ChangeFile forElement="file" icon={<Camera/>} />
+                    </div>
+                    
+                    <span>Choisissez une image de profile</span>
+                </div>
+                <form  className="flex w-full p-2 mt-5 flex-col gap-5">
+                    <input type="file" id="file" className=" hidden" name="file" />
+                    <input type="text" name="nom" placeholder="le nom" className=" border border-black rounded-full p-2" />
+                    <input type="passwor" name="password" placeholder="votre mot de passe" className=" border border-black rounded-full p-2" />
+                    <input type="text" name="prix" placeholder="votre email" className=" border border-black rounded-full p-2"  />
+                    <input type="submit" className=" bg-emerald-500 w-full mt-10 rounded-full p-3 text-white" />
+                </form>
+
             </div>
-        </div>
+        </>
     )
 }

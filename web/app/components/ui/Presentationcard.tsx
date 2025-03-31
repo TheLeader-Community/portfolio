@@ -31,7 +31,7 @@ export default function PresentationCard({ img, composition, prix, children }: {
                 <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <button className=" btn bg-emerald-500 rounded-full mt-3">Acheter</button>
+            <button className=" p-1 bg-emerald-500 rounded-full mt-5 float-end w-52">Acheter</button>
           </div>
         </div>
       </div>

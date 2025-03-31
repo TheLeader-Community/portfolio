@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 import Header from "./components/ui/Header";
 import SearchBar from "./components/form/SearchBar";
 import PresentationCard from "./components/ui/Presentationcard";
-import Card from "./components/ui/Card";
 import CategorieListe from "./components/data/categorieListe";
 import PlatListe from "./components/data/platListe";
 import Link from "next/link";
+import BottomNav from "./components/ui/BottomNav";
 
 const index = () => {
   return (
@@ -26,10 +26,10 @@ const index = () => {
         <Link href={"/plat"} className=" flex text-emerald-500">voir plus <ArrowRight></ArrowRight> </Link>
       </div>
       <PlatListe limite={6}/>
-      
       <p className=" text-xs text-zinc-400 text-center mt-5">
         copyright  by community | The Leader
       </p>
+      <BottomNav></BottomNav>
     </div>
   );
 };

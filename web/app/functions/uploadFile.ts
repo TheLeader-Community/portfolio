@@ -1,7 +1,6 @@
 "use server";
-import fs from "node:fs/promises";
-import path from "node:path";
 
+import fs from "node:fs/promises";
 
 export async function uploadFile(file:File, folder:string,  filename: string) {
 
