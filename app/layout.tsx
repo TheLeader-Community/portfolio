@@ -14,12 +14,18 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
 export const metadata: Metadata = {
   title: 'TheLeader - Massamba Kiminou Chadrack Delmard',
   description: "Découvrez TheLeader, dirigé par Massamba Kiminou Chadrack Delmard, une communauté dédiée à l'innovation, au développement web et mobile, et au marketing digital.",
   authors: [{ name: 'Massamba Kiminou Chadrack Delmard' }],
   keywords: [
     'TheLeader',
+    'Comunity',
+    'IEPA',
+    'Congo',
+    'Informatique',
+    'Programmation',
     'Massamba Kiminou Chadrack Delmard',
     'Développement web',
     'Développement mobile',
