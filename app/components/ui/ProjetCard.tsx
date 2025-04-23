@@ -46,7 +46,7 @@ export default function ProjetCard({ title, children, imgMockup, isVideo = false
                                 </div>
                                 <div className="skeleton w-80 h-80"></div>
                             </div>
-                            : (isVideo) ? <div className=' w-full h-full'><video src={imgMockup} className=' w-full h-full object-cover' muted autoPlay loop></video></div>
+                            : (isVideo) ? <div className=' w-full h-full'><video src={imgMockup} className=' active:scale-200 w-full h-full object-cover' muted autoPlay loop></video></div>
                                 : <Image src={imgMockup} alt={"image"} width={500} height={500} className=' w-full h-full object-cover' />
                         }
                     </div>

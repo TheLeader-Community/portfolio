@@ -8,7 +8,7 @@ import Link from "next/link"
 import { Dispatch, SetStateAction } from "react"
 
 
-export default function Header({ setBackground }: { setBackground: Dispatch<SetStateAction<string>> }) {
+export default function Header({ setBackground }: { setBackground: Dispatch<SetStateAction<string | null | undefined>> }) {
     return (
         <Card className=" fixed w-full top-0  bg-background  left-0 p-0 z-50">
             <div className='navbar shadow-xlrounded-box p-2 md:px-10'>
