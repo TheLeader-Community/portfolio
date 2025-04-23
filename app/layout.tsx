@@ -56,7 +56,7 @@ export default function RootLayout({
     <html lang="fr">
       <link rel="manifest" href="/manifest.json" />
       <body
-        className={` ${geistSans.variable} ${geistMono.variable}  w-full h-full bg-background antialiased`}
+        className={` ${geistSans.variable} ${geistMono.variable} dark  w-full h-full bg-background antialiased`}
       >
         {children}
       </body>

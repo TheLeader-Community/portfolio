@@ -8,7 +8,7 @@ import FloatingButton from "./components/ui/FloatingButton";
 const Index = () => {
   return (
     <div className={` bg-background h-full md:py-32`}>
-      <Header setBackground={()=> {}} />
+      <Header/>
       <Hero />
       <SectionServices />
       <SectionApropos />
