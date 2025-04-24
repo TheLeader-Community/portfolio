@@ -58,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <link rel="manifest" href="/manifest.json" />
+      <meta name="google-site-verification" content="s2T0_JipF3UXFTxuUnLFWHJjuNxOcFg-L8l-X8dYwGs" />
       <body
         className={` ${geistSans.variable} ${geistMono.variable} dark  w-full h-full bg-background antialiased`}
       >
