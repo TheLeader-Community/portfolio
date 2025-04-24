@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TheLeader - Massamba Kiminou Chadrack Delmard',
     description: "Rejoignez TheLeader, une communauté innovante dirigée par Massamba Kiminou Chadrack Delmard, spécialisée dans le développement et le marketing digital.",
-    url: 'https://theleader.com',
+    url: 'https://chadrack-massamba.vercel.app/',
     type: 'website',
     images: [
       {

@@ -13,7 +13,6 @@ const Index = () => {
       <SectionServices />
       <SectionApropos />
       <FloatingButton />
-
     </div>
   )
 }

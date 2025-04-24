@@ -48,11 +48,10 @@ export default function SectionApropos() {
                 <Button className=" bg-blue-500 text-white rounded-lg p-7">
                   continuer
                 </Button>
-
               </div>
             </div>
             <div className=' skeleton p-2 flex-1 text-center mt-7 lg:mt-0 lg:ml-3'>
-              <Image alt="" width={500} height={500} src='/icons/chadeack.jpg' className='w-full h-96 object-cover rounded mx-auto sm:w-10/12 lg:w-full' />
+              <Image alt="" width={500} height={500} src='/icons/chadeack.jpg' className='w-full h-96 object-cover rounded mx-auto lg:w-full' />
             </div>
           </section>
         </div>
