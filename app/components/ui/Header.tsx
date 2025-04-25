@@ -31,7 +31,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className='navbar-center hidden lg:flex'>
-                    <ul className='menu menu-horizontal px-1'>
+                    <ul className='menu flex gap-2 menu-horizontal px-1'>
                         <NavListe />
                     </ul>
                 </div>
@@ -57,7 +57,7 @@ function NavListe() {
             <li><button className=" text-blue-500 font-bold">Accueil</button></li>
             <li>
                 <details>
-                    <summary className="">Nos Services</summary>
+                    <summary className="">Services</summary>
                     <ul className='p-2 bg-background w-40'>
                         <li><button className="">Développement web</button></li>
                         <li><button className="">Développement mobile</button></li>
@@ -66,15 +66,15 @@ function NavListe() {
                     </ul>
                 </details>
             </li>
-            <li>
+            <li><button className=""><Link href={"/portfolio"}>Portofolio</Link></button></li>
+            <li><button className=""><Link href={"/blog"}>Blog</Link></button></li>
+            {/* <li>
                 <details>
                     <summary className="">A propos de moi</summary>
                     <ul className='p-2 bg-background w-40'>
-                        <li><button className=""><Link href={"/portfolio"}>Mon portofolio</Link></button></li>
-                        <li><button className="">Mon blog</button></li>
                     </ul>
                 </details>
-            </li>
+            </li> */}
             <li><button className="">Aide</button></li>
         </>
     )

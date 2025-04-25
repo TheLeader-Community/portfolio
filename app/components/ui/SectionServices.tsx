@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import TitleBottomBar from "./TitleBottomBar"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
 
 export default function SectionServices() {
     return (
@@ -20,10 +21,10 @@ export default function SectionServices() {
                     <TitleBottomBar>
                         Qui sommes nous ?
                     </TitleBottomBar>
-                    <CardContent className=" flex flex-col gap-10">
-                        <div className=" flex flex-col md:flex-row items-center gap-10 mt-10">
+                    <CardContent className=" flex flex-col gap-10 text-center md:text-start">
+                        <div className=" flex flex-col-reverse md:flex-row items-center gap-10 mt-10">
                             <div className=" space-y-5">
-                                <h1 className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
+                                <h1 className=" text-3xl  md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
                                 <p className=" text-sm text-slate-400">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
                                 </p>
@@ -31,9 +32,20 @@ export default function SectionServices() {
                             </div>
                             <Image src={"/img/dashboard.png"} alt="" width={"500"} height={"500"} className="w-full" ></Image>
                         </div>
-                        <div className=" flex flex-col md:flex-row-reverse  items-center gap-10 mt-10">
+                        <div className=" flex flex-col-reverse md:flex-row items-center gap-10 mt-10">
                             <div className=" space-y-5">
-                                <h1 className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
+                                <h1 className=" text-3xl  md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
+                                <p className=" text-sm text-slate-400">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
+                                </p>
+                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
+                            </div>
+                            <Image src={"/img/comment3.png"} alt="" width={"500"} height={"500"} className="w-full" ></Image>
+                        </div>
+
+                        <div className=" flex flex-col-reverse md:flex-row-reverse  items-center gap-10 mt-10">
+                            <div className=" space-y-5">
+                                <h1 className=" text-3xl  md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
 
                                 <p className=" text-sm text-slate-400">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
@@ -42,7 +54,17 @@ export default function SectionServices() {
                             </div>
                             <Image src={"/img/comment1.png"} alt="" width={"500"} height={"500"} className="w-full" ></Image>
                         </div>
+                        <div className=" flex flex-col-reverse md:flex-row-reverse  items-center gap-10 mt-10">
+                            <div className=" space-y-5">
+                                <h1 className=" text-3xl  md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-300 to-blue-900">Nous vous accompagnons dans l'informatisation de vos startups & entreprises</h1>
 
+                                <p className=" text-sm text-slate-400">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
+                                </p>
+                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
+                            </div>
+                            <Image src={"/img/comment2.png"} alt="" width={"500"} height={"500"} className="w-full" ></Image>
+                        </div>
                     </CardContent>
                 </Card>
             </div>
