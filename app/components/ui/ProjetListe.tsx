@@ -15,7 +15,16 @@ export default function ProjetListe() {
                 <ProjetCard linkName='colasbApp.com' imgMockup='/projet/colabs.mp4' title="J'ai crée une app de colaboration en temps réel" isVideo  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
-                <ProjetCard linkName='hexashp.com' imgMockup='/taf/ecommerce.png' title="J'ai crée un site web de ecommerce"  >
+                <ProjetCard linkName='hexashp.com' imgMockup='/taf/ecommerce-1.png' title="J'ai crée un site web de ecommerce"  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
+                <ProjetCard linkName='touladjo.com' imgMockup='/taf/index-6.png' title="j'ai crée un site web de rencontre en ligne"  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
+                <ProjetCard linkName='insta-clone.com' imgMockup='/taf/instagram.png' title="j'ai crée un clone d'instagram"  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
+                <ProjetCard linkName='touladjo.com' imgMockup='/taf/community-2.png' title="j'ai crée un site web de rencontre en ligne"  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
                 <ProjetCard linkName='hexashp.com' imgMockup='/taf/calculator.png' title="J'ai crée une calculatrice"  >

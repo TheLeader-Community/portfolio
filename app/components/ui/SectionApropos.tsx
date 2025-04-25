@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import SectionPortfolio from "./SectionPortfolio";
+import TitleBottomBar from "./TitleBottomBar";
 
 
 export default function SectionApropos() {
@@ -9,10 +10,7 @@ export default function SectionApropos() {
     <div className="  text-foreground text-center pt-20  md:p-20">
       <Card className=" skeleton bg-background">
         <CardHeader className=" border-b-2 pb-3 border-background/30">
-          <div className=" flex flex-col justify-center items-center">
-            <h1 className=" text-3xl md:text-4xl font-bold">Apropos de moi</h1>
-            <div className=" bg-blue-500 w-40 mt-3 h-3 rounded-full"></div>
-          </div>
+          <TitleBottomBar>Apropos de moi</TitleBottomBar>
         </CardHeader>
         <div className=' text-foreground'>
           <header className="">
@@ -41,6 +39,10 @@ export default function SectionApropos() {
                 digitaliser et à innover grâce à des
                 technologies modernes.
               </p>
+              <div>
+                <h1>Ma stack préferer</h1>
+             
+              </div>
               <div className='pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start'>
                 <Button variant={"outline"} className="  rounded-lg p-7">
                   suivant
