@@ -15,7 +15,7 @@ import { Search } from "lucide-react"
 
 export default function SkillListe() {
     return (
-        <div className=" p-5 lg:p-10">
+        <div className=" p-5 md:p-0 lg:p-10">
             <TitleBottomBar>Tous au long de mon apprentissage j&lsquo;ai dévéloppé des compétences</TitleBottomBar>
             {/* <h1 className=" text-2xl md:text-4xl font-bold p-5"></h1> */}
             

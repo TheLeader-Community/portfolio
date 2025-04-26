@@ -7,7 +7,7 @@ import TitleBottomBar from "./TitleBottomBar";
 
 export default function SectionApropos() {
   return (
-    <div className="  text-foreground text-center pt-20  md:p-20">
+    <div className="  text-foreground text-center pt-20  lg::p-20">
       <Card className=" skeleton bg-background">
         <CardHeader className=" border-b-2 pb-3 border-background/30">
           <TitleBottomBar>Apropos de moi</TitleBottomBar>
@@ -25,7 +25,7 @@ export default function SectionApropos() {
           </header>
           <section className=' mt-5 mx-auto flex flex-col-reverse max-w-screen-xl pb-12 px-2 items-center lg:flex-row md:px-8'>
             <div className='space-y-4 flex-1 sm:text-center lg:text-left'>
-              <h1 className=' font-bold text-3xl xl:text-5xl'>
+              <h1 className=' font-bold text-3xl py-2 md:text-5xl'>
                 Développeur & Entrepreneur
                 <span className='text-blue-400/85'> Digital agency</span>
               </h1>
@@ -53,7 +53,7 @@ export default function SectionApropos() {
               </div>
             </div>
             <div className=' skeleton p-2 flex-1 text-center mt-7 lg:mt-0 lg:ml-3'>
-              <Image alt="" width={500} height={500} src='/icons/chadeack.jpg' className='w-full h-96 object-cover rounded mx-auto lg:w-full' />
+              <Image alt="" width={500} height={500} src='/icons/chadeack.jpg' className='w-full lg:h-96 object-cover rounded lg:mx-auto lg:w-full' />
             </div>
           </section>
         </div>

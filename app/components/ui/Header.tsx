@@ -54,7 +54,7 @@ export default function Header() {
 function NavListe() {
     return (
         <>
-            <li><button className=" text-blue-500 font-bold">Accueil</button></li>
+            <li><button className=""><Link href={"/"}>Accueil</Link></button></li>
             <li>
                 <details>
                     <summary className="">Services</summary>
