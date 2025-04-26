@@ -2,7 +2,6 @@
 import Header from "./components/ui/Header";
 import Hero from "./components/ui/Hero";
 import SectionServices from "./components/ui/SectionServices";
-import SectionApropos from "./components/ui/SectionApropos";
 import FloatingButton from "./components/ui/FloatingButton";
 
 const Index = () => {

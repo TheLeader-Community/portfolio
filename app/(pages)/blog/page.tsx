@@ -2,7 +2,7 @@
 
 import Header from "@/app/components/ui/Header";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import {
     Command,
     CommandEmpty,
@@ -24,13 +24,13 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-    BreadcrumbEllipsis,
 } from "@/components/ui/breadcrumb"
 
 import { useState } from "react";
-import { Check, ChevronsUpDown, Quote } from "lucide-react";
+import { Check, ChevronsUpDown, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 
 type Themetype = {
     label: string,
@@ -114,9 +114,9 @@ export default function Blog() {
         <div className="  text-foreground py-20 h-full">
             <Header />
             <div className=" p-5 md:p-20 md:pb-5 text-center space-y-5">
-                <h1 className=" text-5xl p-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-blue-200 to-blue-900 flex justify-center gap-2"> <Quote className="text-blue-500" />  Bienvenue sur le blog du leader <Quote className="text-blue-500" /> </h1>
+                <h1 className=" text-4xl md:text-6xl p-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-blue-900 flex justify-center gap-2">   Bienvenue sur le blog du leader </h1>
                 <p className=" text-slate-300">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem quisquam id ipsum fugiat facere adipisci repellendus labore doloribus eligendi enim maiores dolorum sit, vero asperiores magnam aliquid minus omnis nulla beatae facilis distinctio? Dolorum rem tenetur officia. Alias, et. Ullam minus pariatur nostrum recusandae corporis perferendis tempore dolores iusto!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem quisquam id ipsum fugiat facere adipisci repellendus labore doloribus eligendi enim maiores dolorum sit, vero asperiores magnam aliquid minus omnis nulla beatae facilis distinctio? Dolorum rem tenetur officia. Alias, et. Ullam minus pariatur nostrum recusandae corporis perferendis tempore dolores iusto!
                 </p>
 
                 <div className=" flex flex-col md:flex-row gap-2 justify-center">
@@ -212,33 +212,36 @@ export default function Blog() {
                         </Popover>
                     </div>
                 </div>
-
                 <div>
                     <Button className=" bg-blue-500 text-white">Explorer le blog</Button>
                 </div>
             </div>
 
             <div className=" p-5 md:p-10 py-5">
-                <Card className=" p-5">
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="/">catégorie</BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator />
-                            {value &&
-                                <>
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink href="/components">{value}</BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbPage>{valueSubliste}</BreadcrumbPage>
-                                    </BreadcrumbItem>
-                                </>
-                            }
-                        </BreadcrumbList>
-                    </Breadcrumb>
+                <Card className=" p-2 md:p-5 bg-background">
+                    <div className=" flex flex-col md:flex-row gap-5 items-center justify-around">
+                        <Breadcrumb>
+                            <BreadcrumbList>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/">catégorie</BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator />
+
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/components">{value || "tous"}</BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator />
+                                <BreadcrumbItem>
+                                    <BreadcrumbPage>{valueSubliste || 'tous'}</BreadcrumbPage>
+                                </BreadcrumbItem>
+
+                            </BreadcrumbList>
+                        </Breadcrumb>
+                        <div className=" flex items-center gap-2">
+                            <Input className="md:w-80" type="search" placeholder="Rechercher dans la liste"></Input>
+                            <Search></Search>
+                        </div>
+                    </div>
                 </Card>
             </div>
         </div>
