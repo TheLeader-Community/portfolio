@@ -133,3 +133,10 @@ button:active, .btn {
     @apply bg-background text-foreground;
   }
 }
+
+
+/* my css stylesheet */
+
+html {
+  scroll-behavior: smooth;
+}

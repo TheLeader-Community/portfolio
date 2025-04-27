@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Metadata } from "next";
 import Head from "next/head";
+import SpriteAnimate from "./components/ui/SpriteAnimate";
 
 const geistSans = localFont({
   src: "./fonts/slick.woff",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     ],
   },
 };
- 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -69,6 +70,7 @@ export default function RootLayout({
         className={` ${geistSans.variable} ${geistMono.variable} dark  w-full h-full bg-background antialiased`}
       >
         {children}
+        <SpriteAnimate />
       </body>
     </html>
   );

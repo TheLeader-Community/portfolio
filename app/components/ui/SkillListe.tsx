@@ -15,15 +15,15 @@ import { Search } from "lucide-react"
 
 export default function SkillListe() {
     return (
-        <div className=" p-5 md:p-0 lg:p-10">
-            <TitleBottomBar>Tous au long de mon apprentissage j&lsquo;ai dévéloppé des compétences</TitleBottomBar>
+        <div className=" p-5 md:p-0 lg:p-10  lg:w-full">
+            <TitleBottomBar>Liste des compétences</TitleBottomBar>
             {/* <h1 className=" text-2xl md:text-4xl font-bold p-5"></h1> */}
             
             <div className=" py-10 md:p-10 flex gap-5 w-full justify-center">
                 <Input type="search" className=" w-full" placeholder="rechercher dans la liste" />
                 <Button className=" bg-blue-500 text-white"><Search/>rechercher</Button>
             </div>
-            <div className=" p-5 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className=" w-full p-5 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <SkillCard level={100} imgSkill={"/icons/html.png"} title="html" subtitle="Le langage iremplaçable du web, elui qui est à l'origine de tous ce qui fait le développement web de nos jours" />
                 <SkillCard level={97} imgSkill={"/icons/css.png"} title="css" subtitle="la feuille de style du langage html le plus fidèle, le css est le langage pour embélire le html et le rendre unique" />
                 <SkillCard level={85} imgSkill={"/icons/js.png"} title="javascript" subtitle="Le langage le plus utilisé dans le développement web tant coté front que backend" />
@@ -57,9 +57,9 @@ export default function SkillListe() {
 
 function SkillCard({ imgSkill, title, subtitle, level }: { imgSkill: string, title: string, subtitle?: string, level: number }) {
     return (
-        <Card>
+        <Card className=" w-72 flex flex-col justify-between">
             <CardHeader>
-                <CardTitle className=" flex flex-col w-full justify-center items-center">
+                <CardTitle className="  flex flex-col w-full justify-center items-center">
                     <Image src={imgSkill} alt="image" width="500" height={"500"} className=" border-10 border-y-transparent border-blue-500 size-60 rounded-full object-cover" />
                     <h3 className=" mt-2">{title}</h3>
                 </CardTitle>
