@@ -1,7 +1,7 @@
 "use client"
 
 import gsap from 'gsap'
-import { Angry, Hand, Smile } from 'lucide-react'
+import { Angry, Smile } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 
 export default function SpriteAnimate() {
@@ -23,11 +23,17 @@ export default function SpriteAnimate() {
         }
 
         document.addEventListener("mousemove", move)
-        gsap.to(".circle", { left: mousep.x - 50, right: mousep.x + 50, bottom: mousep.y - 50, top: mousep.y + 50 })
+        gsap.to(".circle", {
+            left: mousep.x - 50,
+            right: mousep.x + 50,
+            bottom: mousep.y - 50,
+            top: mousep.y + 50,
+
+        })
     }, [mousep])
 
     return (
-        <div onMouseEnter={()=>setEtat(!etat)}  className={`circle fixed z-[60] rounded-full flex justify-center items-center hover:bg-white hover:animate-ping animate-bounce bg-blue-500/60 size-10`}>
+        <div onMouseEnter={() => setEtat(!etat)} className={`circle fixed z-[60] rounded-full flex justify-center items-center hover:bg-white hover:animate-ping animate-bounce bg-blue-500/60 size-10 md:size-14`}>
             {!etat ?
                 <Smile /> :
                 <Angry color='red' />
