@@ -27,7 +27,7 @@ export default function SpriteAnimate() {
     }, [mousep])
 
     return (
-        <div onMouseEnter={()=>setEtat(!etat)}  className={`circle fixed z-[60] rounded-full flex justify-center items-center hover:bg-white hover:animate-ping animate-bounce bg-blue-500 size-10`}>
+        <div onMouseEnter={()=>setEtat(!etat)}  className={`circle fixed z-[60] rounded-full flex justify-center items-center hover:bg-white hover:animate-ping animate-bounce bg-blue-500/60 size-10`}>
             {!etat ?
                 <Smile /> :
                 <Angry color='red' />
