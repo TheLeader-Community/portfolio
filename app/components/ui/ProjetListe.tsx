@@ -36,7 +36,7 @@ export default function ProjetListe() {
                 </ProjetCard>
                 <Card>
                     <p className=' text-xs text-zinc-200'>
-                        Pour l'instant cette platforme est en pleine construction et certains des projets n'y sont pas encore
+                        Pour l&lsquo;instant cette platforme est en pleine construction et certains des projets n&lsquo;y sont pas encore
                     </p>
                 </Card>
             </div>

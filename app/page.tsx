@@ -4,7 +4,7 @@ import Hero from "./components/ui/Hero";
 import SectionServices from "./components/ui/SectionServices";
 import FloatingButton from "./components/ui/FloatingButton";
 import Footer from "./components/ui/Footer";
-import SpriteAnimate from "./components/ui/SpriteAnimate";
+
 
 const Index = () => {
   return (

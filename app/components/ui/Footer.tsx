@@ -44,7 +44,7 @@ export default function Footer() {
                                         <Input type='email' required placeholder='entrez votre email' className=' w-full self-end rounded py-5 pl-12' />
                                     </div>
                                     <Button className='bg-blue-500 rounded py-5 text-white'>
-                                        S'abonner
+                                        S&lsquo;abonner
                                     </Button>
                                 </form>
                             </div>

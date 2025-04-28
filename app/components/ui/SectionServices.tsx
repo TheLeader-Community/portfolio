@@ -58,7 +58,7 @@ export default function SectionServices() {
                         </Card>
                         <Card className=" bg-background p-2 flex flex-col-reverse md:flex-row-reverse items-center gap-10 mt-10">
                             <div className=" space-y-5  text-service-1">
-                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Un guide & un espace pour tous les passionnés d'informatique</h1>
+                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Un guide & un espace pour tous les passionnés d&lsquo;informatique</h1>
                                 <p className=" text-sm text-slate-400">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
                                 </p>
