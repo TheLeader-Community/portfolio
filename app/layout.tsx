@@ -5,14 +5,15 @@ import "./globals.css";
 import { Metadata } from "next";
 import Head from "next/head";
 import SpriteAnimate from "./components/ui/SpriteAnimate";
+import BottomBar from "./components/ui/BottomBar";
 
 const geistSans = localFont({
-  src: "./fonts/slick.woff",
+  src: "./fonts/Flaticon.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/slick.woff",
+  src: "./fonts/Flaticon.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -71,6 +72,7 @@ export default function RootLayout({
       >
         {children}
         <SpriteAnimate />
+        <BottomBar />
       </body>
     </html>
   );

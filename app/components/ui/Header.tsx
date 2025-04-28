@@ -1,3 +1,4 @@
+"use client"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -5,6 +6,9 @@ import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { usePathname } from "next/navigation"
 
 
 
@@ -54,28 +58,26 @@ export default function Header() {
 function NavListe() {
     return (
         <>
-            <li><button className=""><Link href={"/"}>Accueil</Link></button></li>
-            <li>
-                <details>
-                    <summary className="">Services</summary>
-                    <ul className='p-2 bg-background w-40'>
-                        <li><button className="">Développement web</button></li>
-                        <li><button className="">Développement mobile</button></li>
-                        <li><button className="">Développement cross platforme</button></li>
-                        <li><button className="">Marketing Digital</button></li>
-                    </ul>
-                </details>
-            </li>
-            <li><button className=""><Link href={"/portfolio"}>Portofolio</Link></button></li>
-            <li><button className=""><Link href={"/blog"}>Blog</Link></button></li>
-            {/* <li>
-                <details>
-                    <summary className="">A propos de moi</summary>
-                    <ul className='p-2 bg-background w-40'>
-                    </ul>
-                </details>
-            </li> */}
-            <li><button className="">Aide</button></li>
+            <NavLink name="Accueil" href="/" />
+            <NavLink name="Service" href="/service" />
+            <NavLink name="Portfolio" href="/portfolio" />
+            <NavLink name="Blog" href="/blog" />
+            <NavLink name="A propos" href="/Blog" />
         </>
+    )
+}
+
+
+function NavLink({ name = "accueil", href }: { name: string, href: string }) {
+
+    const [etat, setEtat] = useState(false)
+    const pathname = usePathname()
+
+
+    return (
+        <li onMouseEnter={() => setEtat(true)} onMouseLeave={() => setEtat(false)}>
+            <Link href={href}>{name}</Link>
+            <motion.span initial={{ width: 0 }} animate={{ width: etat || pathname === `/${(name.toLocaleLowerCase() !== "accueil" ? name.toLocaleLowerCase() : "")}` ? "100%" : 0 }} className={"bg-blue-500 py-1 px-0"}></motion.span>
+        </li>
     )
 }

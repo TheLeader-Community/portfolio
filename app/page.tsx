@@ -8,7 +8,7 @@ import SpriteAnimate from "./components/ui/SpriteAnimate";
 
 const Index = () => {
   return (
-    <div className={` bg-background h-full md:pt-32 md:pb-10 `}>
+    <div className={` bg-background h-full pb-10 md:pt-32 md:pb-10 `}>
       <Header />
       <Hero />
       <SectionServices />
