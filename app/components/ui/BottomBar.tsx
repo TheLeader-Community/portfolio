@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Cog, Home, User2 } from "lucide-react";
 import Link from "next/link";
-
+ 
 export default function BottomBar() {
     return (
         <Card className=" md:hidden bg-background fixed rounded-none bottom-0  left-0 w-full p-3" >
