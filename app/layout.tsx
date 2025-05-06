@@ -27,6 +27,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'Massamba Kiminou Chadrack Delmard' }],
   keywords: [
     'TheLeader',
+    'espoir dev',
+    'espoir',
     'Comunity',
     'IEPA',
     'Congo',
