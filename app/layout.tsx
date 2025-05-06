@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/icons/logo.png',
+        url: '/icons/image.jpg',
         alt: 'Logo TheLeader',
       },
     ],

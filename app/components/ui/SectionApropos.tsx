@@ -20,7 +20,7 @@ export default function SectionApropos() {
                 <Image alt="" width={500} height={500} src='/icons/image.jpg' className=" size-12 rounded-full" />
                 <div>
                   <h1 className=" text-lg font-bold">Espoir Dev</h1>
-                </div>
+                </div> 
               </div>
             </nav>
           </header> */}
