@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 export default function SectionApropos() {
   return (
     <div className="  text-foreground text-center pt-20  lg::p-20">
-      <Card className=" skeleton bg-background">
+      <Card className="  bg-background">
         <CardHeader className=" border-b-2 pb-3 border-background/30">
           <TitleBottomBar>Apropos de moi</TitleBottomBar>
         </CardHeader>
