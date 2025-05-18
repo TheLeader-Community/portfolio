@@ -6,6 +6,8 @@ import { Card } from '@/components/ui/card'
 
 
 export default function ProjetListe() {
+
+
     return (
         <div className=" py-5 p-4 md:p-5 lg:p-10">
             <TitleBottomBar>Liste des projets</TitleBottomBar>
@@ -22,6 +24,9 @@ export default function ProjetListe() {
                 <ProjetCard linkName='insta-clone.com' imgMockup='/taf/instagram.png' title="j'ai crée un clone d'instagram"  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
+                <ProjetCard linkName='tiktok.com' isVideo imgMockup='/taf/tiktok.mp4' title="j'ai crée un clone de tiktok"  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
                 <ProjetCard linkName='community.com' imgMockup='/taf/community-mobile.png' title="j'ai crée une app d'orientation d'étudiant"  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
@@ -34,6 +39,7 @@ export default function ProjetListe() {
                 <ProjetCard linkName='cardges.com' imgMockup='/taf/appgestioncarte.png' title="j'ai crée une template d'app de gestion de carte"  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
+
                 <Card>
                     <p className=' text-xs text-zinc-200'>
                         Pour l&lsquo;instant cette platforme est en pleine construction et certains des projets n&lsquo;y sont pas encore

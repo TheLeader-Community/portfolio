@@ -10,22 +10,9 @@ export default function SectionApropos() {
   return (
     <div className="  text-foreground text-center pt-20  lg::p-20">
       <Card className="  bg-background">
-        <CardHeader className=" border-b-2 pb-3 border-background/30">
-          <TitleBottomBar>Apropos de moi</TitleBottomBar>
-        </CardHeader>
+        
         <div className=' text-foreground'>
-          {/* <header className="">
-            <nav className='items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6'>
-              <div className=" flex justify-center items-center gap-3">
-                <Image alt="" width={500} height={500} src='/icons/image.jpg' className=" size-12 rounded-full" />
-                <div>
-                  <h1 className=" text-lg font-bold">Espoir Dev</h1>
-                </div> 
-              </div>
-            </nav>
-          </header> */}
-
-
+        
           <section className=' mt-5 mx-auto flex flex-col-reverse max-w-screen-xl pb-12 px-2 items-center lg:flex-row md:px-8'>
             <div className='space-y-4 flex-1 sm:text-center lg:text-left'>
               <div className=" flex flex-col md:flex-row justify-center lg:justify-start items-center gap-3">
@@ -58,7 +45,7 @@ export default function SectionApropos() {
               </div>
             </div>
             <div className='  p-2 flex-1 text-center lg:mt-0 lg:ml-3'>
-              <Image alt="" width={500} height={500} src='/icons/image.jpg' className='w-full object-cover rounded lg:mx-auto lg:w-10/12 lg:h-full' />
+              <Image alt="" width={500} height={500} src='/icons/image.jpg' className='w-full object-cover rounded-field lg:mx-auto lg:w-10/12 lg:h-full' />
             </div>
           </section>
         </div>

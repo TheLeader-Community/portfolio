@@ -9,7 +9,7 @@ export default function Hero() {
     return (
         <div className=" flex h-full w-full bg-background pt-20 lg:pt-0 text-foreground">
 
-            <div className=" flex gap-10 h-full flex-col-reverse md:flex-row items-center  w-full px-10 md:px-0 justify-center">
+            <div className=" flex gap-10 h-full flex-col-reverse md:flex-row items-center  w-full px-10 md:px-5 justify-around">
                 <div className='max-w-md '>
                     <h1 className='text-4xl mb-5  font-extrabold mx-auto md:text-5xl'>
                         Bienvenue<span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-blue-500 to-blue-900'> sur Le site du Leader</span>

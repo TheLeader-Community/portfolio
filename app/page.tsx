@@ -4,6 +4,7 @@ import Hero from "./components/ui/Hero";
 import SectionServices from "./components/ui/SectionServices";
 import FloatingButton from "./components/ui/FloatingButton";
 import Footer from "./components/ui/Footer";
+import { SectionSolde } from "./components/ui/SectionSolde";
 
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
       <Header />
       <Hero />
       <SectionServices />
+      <SectionSolde />
       <FloatingButton />
       <Footer />
     </div>

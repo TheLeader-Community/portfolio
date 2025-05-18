@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export function CardService({ icon, title, subtitle }: { icon: ReactNode, title: string, subtitle?: string }) {
     return (
-        <Card className="skeleton text-center text-foreground w-full">
+        <Card className=" rounded bg-transparent text-center text-foreground w-full">
             <CardHeader>
                 <CardTitle className=" p-2 flex flex-col justify-center items-center">
                     {icon}
