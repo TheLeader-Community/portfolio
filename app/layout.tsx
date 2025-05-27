@@ -70,11 +70,14 @@ export default function RootLayout({
         <meta name="google-site-verification" content="s2T0_JipF3UXFTxuUnLFWHJjuNxOcFg-L8l-X8dYwGs" />
       </Head>
       <body
-        className={` ${geistSans.variable} ${geistMono.variable} dark  w-full h-full bg-background antialiased`}
+        className={` ${geistSans.variable} ${geistMono.variable} dark liquide  w-full h-full bg-background antialiased`}
       >
         {children}
         <SpriteAnimate />
+        {/* <LiquideEffect /> */}
         <BottomBar />
+        <script src="/jquery-3.4.1.min.js"></script>
+        <script src="/jquery.ripple.js"></script>
       </body>
     </html>
   );

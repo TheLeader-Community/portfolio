@@ -59,10 +59,10 @@ function NavListe() {
     return (
         <>
             <NavLink name="Accueil" href="/" />
-            <NavLink name="Service" href="/service" />
+            <NavLink name="Service" href="/" />
             <NavLink name="Portfolio" href="/portfolio" />
             <NavLink name="Blog" href="/blog" />
-            <NavLink name="A propos" href="/Blog" />
+            <NavLink name="A propos" href="/blog" />
         </>
     )
 }

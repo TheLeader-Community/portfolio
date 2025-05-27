@@ -18,7 +18,7 @@ export default function SectionPortfolio() {
           <TabsContent value="projet" className=" overflow-x-hidden">
             <ProjetListe />
           </TabsContent>
-          <TabsContent value="experience">Hé shadow your exp here</TabsContent>
+          <TabsContent value="experience">En cours...</TabsContent>
         </Tabs>
     </div>
   )

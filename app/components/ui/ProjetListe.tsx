@@ -15,10 +15,16 @@ export default function ProjetListe() {
                 <ProjetCard linkName='shadowflix.com' imgMockup='/projet/netflix-movie.mp4' title="J'ai crée une app de streaming vidéo" isVideo  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
+                <ProjetCard linkName='multiApp.com' imgMockup='/projet/multiapp.mp4' title="J'ai crée une app de jeux multi joueur" isVideo  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
                 <ProjetCard linkName='colasbApp.com' imgMockup='/projet/colabs.mp4' title="J'ai crée une app de colaboration en temps réel" isVideo  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
                 <ProjetCard linkName='hexashop.com' imgMockup='/taf/ecommerce-1.png' title="J'ai crée un site web de ecommerce"  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
+                </ProjetCard>
+                <ProjetCard linkName='gestion.com' imgMockup='/taf/scolaire.png' title="J'ai crée une platforme de gestion scolaire"  >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, temporibus!
                 </ProjetCard>
                 <ProjetCard linkName='insta-clone.com' imgMockup='/taf/instagram.png' title="j'ai crée un clone d'instagram"  >
