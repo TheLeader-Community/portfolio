@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import SectionPortfolio from "./SectionPortfolio";
-import TitleBottomBar from "./TitleBottomBar";
 import { ArrowRight } from "lucide-react";
 
 

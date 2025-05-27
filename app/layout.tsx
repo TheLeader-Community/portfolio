@@ -76,8 +76,6 @@ export default function RootLayout({
         <SpriteAnimate />
         {/* <LiquideEffect /> */}
         <BottomBar />
-        <script src="/jquery-3.4.1.min.js"></script>
-        <script src="/jquery.ripple.js"></script>
       </body>
     </html>
   );
