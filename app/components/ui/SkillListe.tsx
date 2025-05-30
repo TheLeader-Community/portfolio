@@ -164,15 +164,6 @@ export default function SkillListe() {
 
     return (
         <div className=" p-5 md:p-0  lg:w-full">
-
-            <div className=" py-16">
-                {/* <TitleBottomBar>
-                    Tous au long de mon parcours de développeur j&lsquo;ai eu à toucher à plusieurs
-                    technologie que j&lsquo;ai plus ou moins maitriser cette liste est exaustive
-                </TitleBottomBar> */}
-            </div>
-            {/* <h1 className=" text-2xl md:text-4xl font-bold p-5"></h1> */}
-
             <div className=" py-10 flex flex-col md:flex-row gap-5 w-full justify-around">
                 <h3>Recherchez parmis les compétences</h3>
                 <div className=" flex items-center gap-3">

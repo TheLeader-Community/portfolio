@@ -48,7 +48,7 @@ export default function SectionApropos() {
 
               </div>
               <div className='pt-10 items-center justify-center space-y-3 space-x-6 sm:space-y-0 sm:flex lg:justify-start'>
-                <Button variant={"outline"} className="  rounded-lg p-5">
+                <Button variant={"outline"} className=" hidden md:flex  rounded-lg p-5">
                   visiter le portfolio
                 </Button>
                 <Button className=" bg-blue-500 text-white rounded-lg p-5">
