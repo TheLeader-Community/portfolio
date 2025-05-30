@@ -9,40 +9,42 @@ export default function SectionServices() {
     //304MX6
     //NAME YA CHADDY ET PHONE NUMBER
 
+
     const plans = [
         {
-            name: "Standart",
-            price: "100.000",
+            name: "Starter",
+            price: "100.000 FCFA",
             features: [
-                "création d'un site web vitrine",
-                "referencement garantie",
-                "obtention d'un nom de domaine"
+                "Site vitrine professionnel",
+                "Nom de domaine personnalisé (1 an)",
+                "Référencement de base (SEO)",
+                "Design responsive (mobile et desktop)"
             ]
         },
         {
-            name: "Essentiel",
-            price: "200.000",
+            name: "Business",
+            price: "200.000 FCFA",
             features: [
-                "création d'un site web",
-                "formation en autonomie de gestion web",
-                "création d'une application mobile",
-                "referencement garantie",
-                "obtention d'un nom de domaine"
+                "Site web complet (vitrine ou institutionnel)",
+                "Nom de domaine + hébergement (1 an)",
+                "Formation pour la gestion du site",
+                "Référencement optimisé",
+                "Support technique 1 mois"
             ]
         },
         {
-            name: "pro startup",
-            price: "300.000",
+            name: "Startup Pro",
+            price: "300.000 FCFA",
             features: [
-                "création d'un site web",
-                "création d'une application mobile",
-                "formation en autonomie de gestion web",
-                "accompagnement ",
-                "referencement garantie",
-                "obtention d'un nom de domaine"
+                "Site web + application mobile (Android & Ios)",
+                "Nom de domaine + hébergement (1 an)",
+                "Référencement avancé",
+                "Formation & accompagnement personnalisé",
+                "Design sur mesure + intégration réseaux sociaux",
+                "Support prioritaire 3 mois"
             ]
-        },
-    ]
+        }
+    ];
 
 
 
@@ -92,7 +94,7 @@ export default function SectionServices() {
 
                                             </ul>
                                             <div className='flex-1 flex items-end'>
-                                                <button className='w-full  btn btn-primary duration-150 text-sm'>               Get Started
+                                                <button className='w-full  btn btn-primary duration-150 text-sm'>               Commencer
                                                 </button>
                                             </div>
                                         </div>
@@ -103,57 +105,7 @@ export default function SectionServices() {
                         </div>
                     </div>
                 </section>
-                {/* <Card className=" bg-background">
 
-                    <CardContent className=" flex flex-col gap-10 text-center md:text-start">
-                        <Card className=" bg-background p-2 flex flex-col-reverse md:flex-row items-center gap-10 mt-10">
-                            <div className=" space-y-5  text-service-1">
-                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Une platforme d&lsquo;orientation scolaire</h1>
-                                <p className=" text-sm text-slate-400">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
-                                </p>
-                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
-                            </div>
-                            <Image src={"/illustrations/graduation hats-rafiki.png"} alt="" width={"500"} height={"500"} className="w-full h-96 img-service-1 object-cover" ></Image>
-                        </Card>
-
-                        <Card className=" bg-background p-2 flex flex-col-reverse md:flex-row-reverse items-center gap-10 mt-10">
-                            <div className=" space-y-5  text-service-1">
-                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Une aide dans la digitalisation de vos entreprises</h1>
-                                <p className=" text-sm text-slate-400">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
-                                </p>
-                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
-                            </div>
-                            <Image src={"/illustrations/Sentiment analysis-rafiki.png"} alt="" width={"500"} height={"500"} className="w-full h-96 img-service-1 object-cover" ></Image>
-                        </Card>
-
-
-                        <Card className=" bg-background p-2 flex flex-col-reverse md:flex-row items-center gap-10 mt-10">
-                            <div className=" space-y-5  text-service-1">
-                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Une platforme d&lsquo;intégration aux métiers</h1>
-                                <p className=" text-sm text-slate-400">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
-                                </p>
-                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
-                            </div>
-                            <Image src={"/illustrations/Company-rafiki.png"} alt="" width={"500"} height={"500"} className="w-full h-96 img-service-1 object-cover" ></Image>
-                        </Card>
-                        <Card className=" bg-background p-2 flex flex-col-reverse md:flex-row-reverse items-center gap-10 mt-10">
-                            <div className=" space-y-5  text-service-1">
-                                <h1 className="text-service text-3xl  md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-900">Un guide & un espace pour tous les passionnés d&lsquo;informatique</h1>
-                                <p className=" text-sm text-slate-400">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis earum, iusto doloribus assumenda soluta minus nostrum incidunt ab dicta possimus adipisci animi saepe distinctio nulla sit rerum consequatur nisi.
-                                </p>
-                                <Button className=" bg-blue-500 text-white">En savoir plus <ArrowRight></ArrowRight></Button>
-                            </div>
-                            <Image src={"/illustrations/college entrance exam-rafiki.png"} alt="" width={"500"} height={"500"} className="w-full h-96 img-service-1 object-cover" ></Image>
-                        </Card>
-
-
-
-                    </CardContent>
-                </Card> */}
             </div>
         </>
     )

@@ -29,7 +29,7 @@ export function SectionSolde() {
 
 
     return (
-        <Card className=" bg-transparent">
+        <Card className=" bg-gradient-to-tl border-none via-black from-blue-500 to-black">
             <div className=" w-full overflow-x-hidden relative p-5 md:p-20" >
                 <div className=" pt-10 grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-5">
                     <div className=" text-4xl text-zinc-400 font-bold  flex flex-col gap-5 ">

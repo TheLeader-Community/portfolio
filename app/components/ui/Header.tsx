@@ -14,7 +14,7 @@ import { usePathname } from "next/navigation"
 
 export default function Header() {
     return (
-        <Card className=" fixed w-full top-0  bg-background  left-0 p-0 z-50">
+        <Card className=" fixed w-full top-0 backdrop-blur-xs  bg-background/60  left-0 p-0 z-50">
             <div className='navbar shadow-xlrounded-box p-2 md:px-10'>
                 <div className='navbar-start'>
                     <div className='dropdown'>
@@ -72,7 +72,6 @@ function NavLink({ name = "accueil", href }: { name: string, href: string }) {
 
     const [etat, setEtat] = useState(false)
     const pathname = usePathname()
-
 
     return (
         <li onMouseEnter={() => setEtat(true)} onMouseLeave={() => setEtat(false)}>

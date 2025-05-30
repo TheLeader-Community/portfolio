@@ -5,12 +5,12 @@ import ProjetListe from "./ProjetListe"
 
 export default function SectionPortfolio() {
   return (
-    <div className=" flex justify-center items-center w-full h-full">
+    <div className=" flex justify-center items-center w-full h-full overflow-x-hidden">
         <Tabs defaultValue="competence" className="w-full flex justify-center items-center">
           <TabsList className=" bg-background border ">
-            <TabsTrigger value="competence" className="md:p-5 text-sm"> <Code2/> Compétences</TabsTrigger>
-            <TabsTrigger value="projet" className="md:p-5 text-sm"> <Briefcase/> Projets</TabsTrigger>
-            <TabsTrigger value="experience" className="md:p-5 text-sm"> <DatabaseBackup/> Expèrience</TabsTrigger>
+            <TabsTrigger value="competence" className="md:p-5 md:text-xl"> <Code2/> Compétences</TabsTrigger>
+            <TabsTrigger value="projet" className="md:p-5 md:text-xl"> <Briefcase/> Projets</TabsTrigger>
+            <TabsTrigger value="experience" className="md:p-5 md:text-xl"> <DatabaseBackup/> Expèrience</TabsTrigger>
           </TabsList>
           <TabsContent value="competence" className=" overflow-x-hidden">
             <SkillListe/>

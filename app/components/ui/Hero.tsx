@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 export default function Hero() {
 
     return (
-        <div className=" flex h-full w-full bg-background pt-20 lg:pt-0 text-foreground">
+        <div className=" flex h-full w-full bg-transparent pt-20 lg:pt-0 text-foreground">
 
             <div className=" flex gap-10 h-full flex-col-reverse md:flex-row items-center  w-full px-10 md:px-5 justify-around">
                 <div className='max-w-md '>
@@ -15,10 +15,11 @@ export default function Hero() {
                         Bienvenue<span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-blue-500 to-blue-900'> sur Le site du Leader</span>
                     </h1>
                     <p className='mb-5'>
-                        le site des leaders d&lsquo;hier d&lsquo;aujourd&lsquo;hui et de demain, faisant partie de ceux qui inspirent
-                        qui laissent une empreinte.
+                        Le site des leaders d&lsquo;hier, &lsquo;’aujourd’hui et de demain.
+                        Faites partie de ceux qui inspirent, innovent et laissent une empreinte durable.
+
                     </p>
-                    <Button className=" bg-blue-500 text-white">Explorer la platforme</Button>
+                    <Button className=" bg-blue-500 text-white">Contacter nous maintenant</Button>
                 </div>
 
                 <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="mockup-browser bg-background  border h-80 lg:w-5/12 ">
