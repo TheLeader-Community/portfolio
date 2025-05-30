@@ -1,7 +1,6 @@
 import React from 'react'
 import ProjetCard from './ProjetCard'
 import { Card } from '@/components/ui/card'
-import ProjectSlide from './ProjectSlide'
 
 
 
@@ -76,9 +75,9 @@ export default function ProjetListe() {
     return (
         <div className=" py-5 p-4 md:p-5 lg:p-10">
 
-            <div className=' relative py-28'>
+            {/* <div className=' relative py-28'>
                 <ProjectSlide />
-            </div>
+            </div> */}
             <div className=' mt-5 md:mt-20  flex flex-col gap-20'>
                 {
                     ListeProjets.map((el, index) => (

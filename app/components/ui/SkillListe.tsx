@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import Image from "next/image"
-import TitleBottomBar from "./TitleBottomBar"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Search } from "lucide-react"
@@ -167,10 +166,10 @@ export default function SkillListe() {
         <div className=" p-5 md:p-0  lg:w-full">
 
             <div className=" py-16">
-                <TitleBottomBar>
+                {/* <TitleBottomBar>
                     Tous au long de mon parcours de développeur j&lsquo;ai eu à toucher à plusieurs
                     technologie que j&lsquo;ai plus ou moins maitriser cette liste est exaustive
-                </TitleBottomBar>
+                </TitleBottomBar> */}
             </div>
             {/* <h1 className=" text-2xl md:text-4xl font-bold p-5"></h1> */}
 
