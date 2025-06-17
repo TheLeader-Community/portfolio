@@ -186,7 +186,7 @@ export default function SkillListe() {
 
 function SkillCard({ imgSkill, title, subtitle, level }: { imgSkill: string, title: string, subtitle?: string, level: number }) {
     return (
-        <Card className=" w-72 bg-transparent flex flex-col justify-between">
+        <Card className=" hover:shadow-2xl shadow-blue-500 transition-all w-72 bg-transparent flex flex-col justify-between">
             <CardHeader>
                 <CardTitle className="  flex flex-col w-full justify-center items-center">
                     <Image src={imgSkill} alt="image" width="500" height={"500"} className=" border-10 border-y-transparent border-blue-500 size-60 rounded-full object-cover" />

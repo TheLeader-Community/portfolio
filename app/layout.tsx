@@ -1,22 +1,9 @@
-import localFont from "next/font/local"
-
 import "./globals.css";
 
 import { Metadata } from "next";
 import Head from "next/head";
 import SpriteAnimate from "./components/ui/SpriteAnimate";
 import BottomBar from "./components/ui/BottomBar";
-
-const geistSans = localFont({
-  src: "./fonts/Flaticon.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/Flaticon.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: 'TheLeader - Massamba Kiminou Chadrack Delmard',
@@ -70,11 +57,10 @@ export default function RootLayout({
         <meta name="google-site-verification" content="s2T0_JipF3UXFTxuUnLFWHJjuNxOcFg-L8l-X8dYwGs" />
       </Head>
       <body
-        className={` ${geistSans.variable} ${geistMono.variable} dark liquide  w-full h-full bg-background antialiased`}
+        className={` dark   w-full h-full bg-background antialiased`}
       >
         {children}
         <SpriteAnimate />
-        {/* <LiquideEffect /> */}
         <BottomBar />
       </body>
     </html>

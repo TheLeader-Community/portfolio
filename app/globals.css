@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 @plugin "daisyui";
 
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,6 +44,14 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+
+@font-face {
+  font-family: 'police';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 button, .btn{
   transition: 0.2s;
@@ -139,4 +148,11 @@ button:active, .btn {
 
 html {
   scroll-behavior: smooth;
+  font-family: police;
+}
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

@@ -20,7 +20,7 @@ export default function ProjetCard({ title, children, imgMockup, isVideo = false
         <Card className=' lg:p-5 bg-background w-full'>
             <div className=" flex gap-10 h-full flex-col-reverse md:flex-row md:items-center overflow-x-hidden  w-full px-2 md:px-0 justify-between">
                 <div className='max-w-md text-start '>
-                    <h1 className='text-4xl mb-5  font-extrabold mx-auto md:text-5xl'>
+                    <h1 className='text-3xl md:text-4xl mb-5  font-extrabold mx-auto '>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-200 to-blue-900'> {title}</span>
                     </h1>
                     <p className='mb-5'>

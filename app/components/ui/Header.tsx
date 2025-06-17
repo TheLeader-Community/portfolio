@@ -2,8 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -41,10 +39,10 @@ export default function Header() {
                 </div>
                 <div className='navbar-end'>
                     <div className=" flex gap-3">
-                        <div className=" hidden md:flex items-center gap-2">
+                        {/* <div className=" hidden md:flex items-center gap-2">
                             <Search />
                             <Input placeholder="Rechercher depuis le site" />
-                        </div>
+                        </div> */}
                         <Button className="bg-blue-500 text-white hover:bg-blue-500/60 transition-all">Se connecter</Button>
                     </div>
                 </div>

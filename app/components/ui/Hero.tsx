@@ -2,13 +2,15 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Bot from "../bot/Bot"
 
 
 export default function Hero() {
 
-    return (
-        <div className=" flex h-full w-full bg-transparent pt-20 lg:pt-0 text-foreground">
 
+
+    return (
+        <div  className=" flex h-full w-full bg-transparent pt-20 lg:pt-0 text-foreground">
             <div className=" flex gap-10 h-full flex-col-reverse md:flex-row items-center  w-full px-10 md:px-5 justify-around">
                 <div className='max-w-md '>
                     <h1 className='text-4xl mb-5  font-extrabold mx-auto md:text-5xl'>
@@ -40,7 +42,10 @@ export default function Hero() {
                     </div>
                 </motion.div>
             </div>
-
+            <Bot isActive onCancel={() => { }} onSubmit={() => { }}>
+                Bienvenu sur le portfolio de mon leader, si vous voule je peux vous aidez à explorer cette platforme
+                voule vous que je vous aides à explorer ?
+            </Bot>
         </div>
     )
 }
