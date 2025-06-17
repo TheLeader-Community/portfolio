@@ -113,7 +113,7 @@ export default function SectionApropos() {
             <div ref={HeroPortfolioImg} className="flex-1 opacity-0 translate-x-96 rotate-180  flex-col items-center  justify-center md:justify-start gap-3 lg:mt-0 lg:ml-3 p-2">
               <div className=' pb-20 relative  p-2 flex flex-col justify-center items-center text-center lg:mt-0 lg:ml-3'>
                 <div className=" boxShadowAfterImage absolute size-72 md:size-96 p-5 rounded-full border-0 shadow-2xl shadow-blue-500 border-b-transparent border-t-transparent bg-transparent border-blue-500 "></div>
-                <Image alt="" width={500} height={500} src='/icons/image.jpg' className=' size-72 md:size-96 rounded-full object-cover lg:mx-auto' />
+                <Image alt="" width={500} height={500} src='/profiles/chadrack.png' className=' size-72 md:size-96 rounded-full object-cover lg:mx-auto' />
               </div>
             </div>
           </section>
