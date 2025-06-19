@@ -8,8 +8,8 @@ export default function SectionContact() {
         <div>
             <section className="py-28 relative ">
                 <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:text-center md:px-8">
-                    <div className="max-w-xl md:mx-auto">
-                        <p className=" font-black text-3xl md:text-4xl">
+                    <div className="max-w-xl space-y-5 md:mx-auto">
+                        <p className=" font-black text-4xl md:text-6xl">
                             Rejoignez l&lsquo;élite du digital avec Le Site du Leader
                         </p>
                         <p className="text-primary/40 mt-3">

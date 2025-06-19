@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import SectionPortfolio from "./SectionPortfolio";
 import { ArrowRight } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import TextPlugin from "gsap/TextPlugin";
@@ -25,6 +25,9 @@ export default function SectionApropos() {
     "/icons/postgresql.jpg",
     "/icons/nodejs-2.png",
   ]
+
+
+  const [BotActive, setBotActive] = useState(false)
 
 
   const HeroPortfolioImg = useRef(null)
@@ -67,8 +70,26 @@ export default function SectionApropos() {
       rotate: 360,
     }).to(".boxShadowAfterImage", {
       rotate: 0,
-      onComplete:function(){
+      onComplete: function () {
 
+        const tl2 = gsap.timeline()
+
+        tl2.to(".Bot", {
+          yPercent: 0,
+        }).to(".Bot", {
+          width: "calc(var(--spacing) * 80) ",
+          height: 230,
+          borderRadius: "1rem"
+        }).
+          to(".Bot-head", {
+            opacity: 0,
+            display:"none"
+          }).
+          to(".Bot-content", {
+            opacity: 1,
+            display: "block",
+          })
+        setBotActive(true)
       }
     })
 
@@ -78,10 +99,10 @@ export default function SectionApropos() {
     <div className="  text-foreground text-center pt-20 overflow-x-hidden ">
       <Card className="  bg-background">
         <div className=' text-foreground'>
-          <section className=' mt-5 mx-auto flex flex-col-reverse justify-center  items-center max-w-screen-xl pb-12 px-2 lg:flex-row md:px-8'>
+          <section className=' mt-5 mx-auto flex flex-col-reverse justify-center  items-center max-w-screen-xl pb-12 px-2 lg:flex-row md:px-10'>
             <div ref={HeroPortfolioText} className='space-y-4  flex-1 sm:text-center lg:text-left'>
               <h1 ref={portfolio_title_ref} className=' -translate-x-96 opacity-0 font-black text-4xl py-2 md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-white to-[#4F46E5]'>
-                Développeur et entrepreneur digital
+                Chadrack Massamba  Développeur & entrepreneur
               </h1>
               <p ref={portfolio_subtitle_ref} className=' -translate-x-96 opacity-0 max-w-xl text-zinc-300 leading-relaxed sm:mx-auto lg:ml-0'>
                 entrepreneur passionné par la
@@ -92,20 +113,20 @@ export default function SectionApropos() {
                 digitaliser et à innover grâce à des
                 technologies modernes.
               </p>
-              <div ref={portfolio_skilllist_ref} className=" -translate-x-96 opacity-0 grid grid-cols-3 md:flex md:flex-wrap">
+              <div ref={portfolio_skilllist_ref} className=" -translate-x-96 opacity-0 grid grid-cols-4 md:flex md:flex-wrap">
                 {
                   ListeSkillStack.map((el: string, index: number) => (
                     <div key={index} className=" skillbox -translate-x-10 scale-0 opacity-0 rounded-2xl bg-transparent p-3 shadow-2xl">
-                      <Image src={el} width={500} height={500} alt="" className=" object-cover size-24 rounded-field"></Image>
+                      <Image src={el} width={500} height={500} alt="" className=" transition-all object-cover size-16 md:size-24 shadow-2xl shadow-blue-500   rounded-full"></Image>
                     </div>
                   ))
                 }
               </div>
               <div className='pt-10 items-center justify-center space-y-3 space-x-6 sm:space-y-0 sm:flex lg:justify-start'>
-                <Button variant={"outline"} className=" hidden md:flex  rounded-lg p-5">
+                <Button variant={"outline"} className=" rounded-full hidden md:flex  p-5">
                   visiter le portfolio
                 </Button>
-                <Button className=" bg-blue-500 text-white rounded-lg p-5">
+                <Button className=" bg-blue-500 rounded-full text-white  p-5">
                   Explorer mon blog <ArrowRight></ArrowRight>
                 </Button>
               </div>
@@ -122,9 +143,8 @@ export default function SectionApropos() {
       </Card>
       <div>
       </div>
-      <Bot isActive={false} onCancel={() => { }} onSubmit={() => { }}>
-        Bienvenu sur le portfolio de mon leader, si vous voule je peux vous aidez à explorer cette platforme
-        voule vous que je vous aides à explorer ?
+      <Bot isActive={BotActive} onCancel={() => { }} onSubmit={() => { }}>
+       vous etes actuellement sur le portfolio de Massamba Kimnou que voulez vous voir ?
       </Bot>
     </div >
 

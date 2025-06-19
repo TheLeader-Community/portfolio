@@ -5,6 +5,9 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { Card } from '@/components/ui/card'
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 
 type Props = {
@@ -12,13 +15,13 @@ type Props = {
     children?: string,
     imgMockup?: string,
     isVideo?: boolean,
-    linkName?:string
+    linkName?: string
 }
 
 export default function ProjetCard({ title, children, imgMockup, isVideo = false, linkName }: Props) {
     return (
         <Card className=' lg:p-5 bg-background w-full'>
-            <div className=" flex gap-10 h-full flex-col-reverse md:flex-row md:items-center overflow-x-hidden  w-full px-2 md:px-0 justify-between">
+            <div className=" flex gap-10 h-full flex-col-reverse md:flex-row md:items-center   w-full px-2 md:px-0 justify-between">
                 <div className='max-w-md text-start '>
                     <h1 className='text-3xl md:text-4xl mb-5  font-extrabold mx-auto '>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-foreground via-blue-200 to-blue-900'> {title}</span>
@@ -52,6 +55,58 @@ export default function ProjetCard({ title, children, imgMockup, isVideo = false
                     </div>
                 </motion.div>
             </div>
+            <div className='w-full max-w-5xl mx-auto'>
+                <Swiper
+                    modules={[Autoplay]}
+                    slidesPerView={3}
+                    spaceBetween={20}
+                    loop={true}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    <SwiperSlide>
+                        <Image
+                            src="/taf/film-7.png"
+                            className="h-80 w-96 object-cover"
+                            width={500}
+                            height={500}
+                            alt=""
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image
+                            src="/taf/film-1.png"
+                            className="h-80 w-96 object-cover"
+                            width={500}
+                            height={500}
+                            alt=""
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image
+                            src="/taf/film-4.png"
+                            className="h-80 w-96 object-cover"
+                            width={500}
+                            height={500}
+                            alt=""
+                        />
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+
         </Card>
     )
 }

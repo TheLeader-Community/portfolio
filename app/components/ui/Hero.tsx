@@ -3,11 +3,12 @@
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Bot from "../bot/Bot"
+import { useRouter } from "next/navigation"
 
 
 export default function Hero() {
 
-
+       const router =  useRouter()
 
     return (
         <div  className=" flex h-full w-full bg-transparent pt-20 lg:pt-0 text-foreground">
@@ -26,7 +27,7 @@ export default function Hero() {
 
                 <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="mockup-browser bg-background  border h-80 lg:w-5/12 ">
                     <div className="mockup-browser-toolbar bg-background">
-                        <div className="input border text-white  ">https://community.com</div>
+                        <div className="input border text-white  ">mon dernier projet</div>
                     </div>
                     <div className="flex justify-center px-4 py-16 border-t bg-no-repeat bg-cover h-full" >
                         <div className=" flex flex-col w-full gap-5">
@@ -42,9 +43,11 @@ export default function Hero() {
                     </div>
                 </motion.div>
             </div>
-            <Bot isActive onCancel={() => { }} onSubmit={() => { }}>
-                Bienvenu sur le portfolio de mon leader, si vous voule je peux vous aidez à explorer cette platforme
-                voule vous que je vous aides à explorer ?
+            <Bot isActive onCancel={() => { }} onSubmit={() => {
+                router.push("/portfolio")
+             }}>
+                Bienvenue sur le site de mon leader, si vous voulez je peux vous aidez à explorer cette platforme
+                voulez vous que je vous aides à explorer ?
             </Bot>
         </div>
     )

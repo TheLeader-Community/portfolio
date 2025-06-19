@@ -7,7 +7,9 @@ import Footer from "./components/ui/Footer";
 import { SectionSolde } from "./components/ui/SectionSolde";
 import SectionContact from "./components/ui/SectionContact";
 
+
 const Index = () => {
+
   return (
       <div className={` h-full pb-10 md:pt-32 md:pb-10 `}>
         <Header />
@@ -15,7 +17,6 @@ const Index = () => {
         <SectionServices />
         <SectionSolde />
         <SectionContact />
-
         <div className='py-14'>
           <div className='max-w-screen-xl mx-auto px-4 md:px-8'>
             <div className='max-w-xl mx-auto text-center'>
@@ -111,6 +112,8 @@ const Index = () => {
       </div>
   )
 }
+
+
 
 export default Index;
 

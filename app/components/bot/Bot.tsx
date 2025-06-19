@@ -5,9 +5,15 @@ import React, { useEffect, useState } from 'react'
 import WriteText from '../ui/WriteText'
 import gsap from 'gsap'
 
-export default function Bot({ children, isActive = false, onCancel, onSubmit }: {
+type selectChoix = {
+    nom:string,
+    action: () => void
+}
+
+export default function Bot({ children, isActive = false, SelectChoice, onCancel, onSubmit }: {
     children: string,
-    isActive?: boolean
+    isActive?: boolean,
+    SelectChoice?:selectChoix[]
     onCancel: () => void,
     onSubmit: () => void
 }) {
@@ -15,8 +21,6 @@ export default function Bot({ children, isActive = false, onCancel, onSubmit }: 
     const [etat, setEtat] = useState(isActive)
 
     const closeBot = () => {
-
-        // alert(document.querySelector(".Bot")?.style.height)
 
         const tl = gsap.timeline()
 
@@ -63,12 +67,12 @@ export default function Bot({ children, isActive = false, onCancel, onSubmit }: 
     }, [])
 
     return (
-        <div className={" Bot fixed p-5 w-80 py-10 top-40 rounded-2xl right-10 z-10 bg-black/40 backdrop-blur-2xl shadow-2xl shadow-blue-500 " + (!etat ? " flex items-center justify-center " : "")}>
+        <div className={" Bot fixed p-5 max-w-80  py-10 top-40 rounded-2xl right-10 z-10 bg-black/40 backdrop-blur-2xl shadow-2xl shadow-blue-500 " + (!etat ? " flex items-center justify-center " : "")}>
             {
                 etat ? <button className=" float-end">
                     <X onClick={closeBot} />
-                </button> :
-                    <button onClick={OpenBot}>
+                </button> : 
+                    <button className='Bot-head' onClick={OpenBot}>
                         <BotMessageSquare className=" animate-pulse " size={40} />
                     </button>
             }
