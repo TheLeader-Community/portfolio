@@ -67,7 +67,7 @@ export default function Bot({ children, isActive = false, SelectChoice, onCancel
     }, [])
 
     return (
-        <div className={" Bot fixed p-5 max-w-80  py-10 top-40 rounded-2xl right-10 z-10 bg-black/40 backdrop-blur-2xl shadow-2xl shadow-blue-500 " + (!etat ? " flex items-center justify-center " : "")}>
+        <div className={" Bot fixed p-5 max-w-80  py-10 top-30 md:top-40 rounded-2xl right-10 z-10 bg-black/40 backdrop-blur-2xl shadow-2xl shadow-blue-500 " + (!etat ? " flex items-center justify-center " : "")}>
             {
                 etat ? <button className=" float-end">
                     <X onClick={closeBot} />
