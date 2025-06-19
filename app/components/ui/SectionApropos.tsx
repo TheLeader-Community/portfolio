@@ -44,7 +44,7 @@ export default function SectionApropos() {
 
 
     const tl = gsap.timeline()
-
+    setBotActive(false)
     tl.to(HeroPortfolioImg.current, {
       x: 0,
       opacity: 1,
@@ -144,7 +144,7 @@ export default function SectionApropos() {
       <div>
       </div>
       <Bot isActive={BotActive} onCancel={() => { }} onSubmit={() => { }}>
-       vous etes actuellement sur le portfolio de Massamba Kimnou que voulez vous voir ?
+        vous etes actuellement sur le portfolio de Massamba Kimnou que voulez vous voir ?
       </Bot>
     </div >
 
