@@ -62,6 +62,7 @@ export default function Bot({ children, isActive = false, SelectChoice, onCancel
     }
 
     useEffect(() => {
+        console.log(SelectChoice)
         if (!etat)
             closeBot()
     }, [])
