@@ -88,7 +88,7 @@ export default function Bot({ children, isActive = false, SelectChoice, onCancel
                     </WriteText>
                 </p>
                 <div className=" flex gap-2 items-center pt-5 justify-between">
-                    <button onClick={() => onCancel()} className=" text-sm rounded-full p-2 px-5 w-full bg-blue-500/10 text-white">non, merci</button>
+                    <button onClick={() => onCancel() ?? closeBot()} className=" text-sm rounded-full p-2 px-5 w-full bg-blue-500/10 text-white">non, merci</button>
                     <button onClick={() => onSubmit()} className=" text-sm rounded-full p-2 px-5 w-full bg-blue-500 text-white">d&lsquo;accord</button>
                 </div>
             </div>

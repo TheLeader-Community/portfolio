@@ -70,27 +70,27 @@ export default function SectionApropos() {
       rotate: 360,
     }).to(".boxShadowAfterImage", {
       rotate: 0,
-      onComplete: function () {
+      // onComplete: function () {
 
-        const tl2 = gsap.timeline()
+      //   const tl2 = gsap.timeline()
 
-        tl2.to(".Bot", {
-          yPercent: 0,
-        }).to(".Bot", {
-          width: "calc(var(--spacing) * 80) ",
-          height: 230,
-          borderRadius: "1rem"
-        }).
-          to(".Bot-head", {
-            opacity: 0,
-            display:"none"
-          }).
-          to(".Bot-content", {
-            opacity: 1,
-            display: "block",
-          })
-        setBotActive(true)
-      }
+      //   tl2.to(".Bot", {
+      //     yPercent: 0,
+      //   }).to(".Bot", {
+      //     width: "calc(var(--spacing) * 80) ",
+      //     height: 230,
+      //     borderRadius: "1rem"
+      //   }).
+      //     to(".Bot-head", {
+      //       opacity: 0,
+      //       display:"none"
+      //     }).
+      //     to(".Bot-content", {
+      //       opacity: 1,
+      //       display: "block",
+      //     })
+      //   setBotActive(true)
+      // }
     })
 
   }, [])
